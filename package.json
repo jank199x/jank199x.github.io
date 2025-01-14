@@ -1,17 +1,21 @@
 {
   "name": "jank199x.github.io",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Getting the hang of 11ty generator",
   "main": "index.js",
   "scripts": {
-	"build": "npx @11ty/eleventy",
-	"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
-	"build-ghpages": "npx @11ty/eleventy --input=./src/",
-	"start": "npx @11ty/eleventy --serve --quiet",
-	"start-ghpages": "npx @11ty/eleventy --serve --quiet",
-	"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
-	"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-	"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --input=./src/",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "start-ghpages": "npx @11ty/eleventy --serve --quiet",
+    "debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "luxon": "^3.5.0"
   },
   "repository": {
     "type": "git",
@@ -23,8 +27,5 @@
   "bugs": {
     "url": "https://github.com/jank199x/jank199x.github.io/issues"
   },
-  "homepage": "https://github.com/jank199x/jank199x.github.io#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
-  }
+  "homepage": "https://github.com/jank199x/jank199x.github.io#readme"
 }
